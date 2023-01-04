@@ -1,0 +1,134 @@
+ /* Firefox */
+*{
+    margin: 0;
+    padding:0 ;
+    scrollbar-width: thin;
+    scrollbar-color: #797777 #ede3e3;
+    font-family:sans-serif;
+}
+
+ 
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ede3e3;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #797777;
+    border-radius: 2px;
+    border: 3px none #ffffff;
+  }
+body{
+    background-color:var(--back-color-2);
+}
+:root{
+    --back-color: #fdfdfd;
+    --back-color-h1:#7d1debaf;
+    --font-color:#000000d8;
+    --font-hover:rgb(190, 190, 190);
+    --buttom-color: #fdfdfd;
+}
+/*Navbar*/
+header{
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.49);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.49);
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.49);
+ 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top:0;
+    background-color: var(--back-color);
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+nav{
+    position: absolute;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+nav h1{
+    margin: 20pt;
+    cursor: pointer;
+    color: var(--font-color);
+}   
+nav ul{
+    font-size: large;
+    display: flex;
+    margin: 20pt;
+} 
+nav a {
+    text-decoration: none;
+    padding: 15px 15px;
+    color:var(--font-color);
+    transition:122ms;
+
+
+}nav a:hover{
+    color:var(--font-hover) ;
+    transition:122ms;
+
+}
+nav li{
+    list-style-type: none;
+}
+/*Background*/
+#background{
+    background-color: #7d1deb;
+    height: 100%;
+    width: 100%;
+}
+/*Slider*/
+
+#slider{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#slider .wrapper{
+    display: flex;  
+    width: 1200px;
+    height:700px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.wrapper li img{
+    margin-top: 51px;
+    width: 1200px;
+    height:700px;
+   
+}.wrapper li{
+    list-style-type: none;
+}
+/*Radio*/
+.button{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+.button button{
+    margin: 3px;
+    width: 45px;
+    height: 19px;
+    border-radius: 50pt;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--buttom-color);
+}.button button:hover{
+    
+    transition: 120ms;
+    border: 1px solid var(--font-color);
+}

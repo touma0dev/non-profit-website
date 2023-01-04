@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frelancer Example</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header>
+    <nav>
+    <div id="Logo">
+        <h1>
+           LOGO 
+        </h1>
+    </div>
+        <div id="Section">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Programs</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </div>
+    </nav>
+</header>
+   <div class="colore" id="slider">
+    <div class="wrapper">
+        <li><img src="/1.jpg" alt="" id="slider-1"></li>
+        <li><img src="/2.jpg" alt=""id="slider-2"></li>
+        <li><img src="/3.jpg" alt="" id="slider-3"></li>
+        <li><img src="/4.jpg" alt="" id="slider-4"></li>
+
+    </div>
+    <div class="button">
+        <button type="circle" onclick="slider()" name="radiobtn" id="radio-1"> </button>
+        <button type="circle" onclick="slider1()" name="radiobtn" id="radio-2"> </button>
+        <button type="circle" onclick="slider2()" name="radiobtn" id="radio-3"> </button>
+        <button type="circle" onclick="slider3()" name="radiobtn" id="radio-4"> </button>
+        </div>
+    <script>
+        function slider(){     
+        var slider=document.getElementById('slider-1')
+        var slider1=document.getElementById('slider-2')
+        var slider2=document.getElementById('slider-3')
+        var slider3=document.getElementById('slider-4')
+            slider.style.display = "block";
+            slider1.style.display = "none";
+            slider2.style.display = "none";
+            slider3.style.display = "none";
+
+        } 
+        function slider1(){
+            var slider=document.getElementById('slider-1')
+            var slider1=document.getElementById('slider-2')
+            var slider2=document.getElementById('slider-3')
+            var slider3=document.getElementById('slider-4')
+            slider.style.display = "none";
+            slider1.style.display = "block";
+            slider2.style.display = "none";
+            slider3.style.display = "none";
+            }
+            function slider2(){
+                var slider=document.getElementById('slider-1')
+                var slider1=document.getElementById('slider-2')
+                var slider2=document.getElementById('slider-3')
+                var slider3=document.getElementById('slider-4')
+                    slider.style.display = "none";
+                    slider1.style.display = "none";
+                    slider2.style.display = "block";
+                    slider3.style.display = "none";
+            }function slider3(){
+                var slider=document.getElementById('slider-1')
+                var slider1=document.getElementById('slider-2')
+                var slider2=document.getElementById('slider-3')
+                var slider3=document.getElementById('slider-4')
+                    slider.style.display = "none";
+                    slider1.style.display = "none";
+                    slider2.style.display = "none";
+                    slider3.style.display = "block";
+            }
+    </script>
+    </div>
+   </div>
+</body>
+</html>
